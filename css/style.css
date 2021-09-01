@@ -1,0 +1,205 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    background-color: #f0f0f0;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+.main-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+.files-h1{
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(34,37,41);
+}
+#main-section{
+    margin-bottom: 200px;
+}
+#main-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#article-header{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#previous-folder{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+#previous-folder img:hover{
+    filter: invert(9%) sepia(69%) saturate(7453%) hue-rotate(347deg) brightness(90%) contrast(94%);
+}
+#article-h2{
+    font-family: "Roboto",sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+#table-div{
+    background-color: white;
+}
+footer {
+    background-color: rgb(34,37,41);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    font-family: "Roboto",sans-serif;
+}
+
+#footer-href{
+    text-decoration: none;
+    color: white;
+
+}
+#footer-href:hover{
+    color: #b00d23;
+    text-decoration:none;
+}
+#upload-image{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upload-href{
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+#upload-href:hover img{
+    filter: invert(9%) sepia(69%) saturate(7453%) hue-rotate(347deg) brightness(90%) contrast(94%);
+}
+#form-article{
+    width: 40%;
+    margin: auto auto 100px;
+}
+#save-as{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#save-as-name{
+    width:85%;
+}
+#submit-button-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#back-arrow{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+#back-arrow img:hover{
+    filter: invert(9%) sepia(69%) saturate(7453%) hue-rotate(347deg) brightness(90%) contrast(94%);
+}
+#folder{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-left: 15%;
+}
+#folder img:hover{
+    filter: invert(9%) sepia(69%) saturate(7453%) hue-rotate(347deg) brightness(90%) contrast(94%);
+}
+#info-site-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#info-site-section #upload-href{
+    margin-right: 15%;
+}
+.sort{
+    cursor: pointer;
+}
+.sort:hover{
+    color: #b00d23 !important;
+}
+.dir-tr:hover{
+    background-color: rgba(34,37,41,0.5);;
+}
+.dir-tr{
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+th{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+#info-header{
+    display: flex;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+#info-header h1{
+    font-size: 50px;
+    text-align: center;
+}
+#info-header > span{
+    font-size: 20px;
+}
+#info-header h1 span{
+    color: #b00d23 !important;
+}
+.custom-file-label::after{
+    content: "Prechádzať";
+}
+@media (max-width:  768px){
+    #form-article{
+        width: 80%;
+        margin: auto auto 100px;
+    }
+    .files-h1{
+        position: relative;
+        font-family: "Roboto",sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        color: rgb(34,37,41);
+    }
+    #save-as-name{
+        width:100%;
+    }
+    #back-arrow{
+        width: 8vw;
+        height: 8vw;
+        position: absolute;
+        top: -1vw;
+        left: -15vw;
+    }
+}
+
+
